@@ -57,7 +57,7 @@ function initGame(){
         x:280,
         y:460,
         width:40,
-        height:20,
+        height:30,
         speed:6
     };
 
@@ -78,7 +78,7 @@ document.addEventListener("keydown", e=>{
         bullets.push({
             x: player.x + player.width/2 -2,
             y: player.y,
-            width:4,
+            width:8,
             height:10,
             speed:8
         });
@@ -94,8 +94,8 @@ function spawnAsteroid(){
     asteroids.push({
         x: Math.random()*(canvas.width-30),
         y: -30,
-        size: 30,
-        speed: 2 + Math.random()*2
+        size: 50,
+        speed: 0 + Math.random()*2
     });
 }
 
